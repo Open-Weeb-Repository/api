@@ -12,7 +12,7 @@ export class Providers extends Service {
     const client: Promise<Db> = app.get('mongoClient');
 
     client.then(db => {
-      this.Model = db.collection('providers');
+      this.Model = db.collection('projectProviders');
     });
   }
 
