@@ -1,8 +1,8 @@
 import { Db } from 'mongodb';
 import { Service, MongoDBServiceOptions } from 'feathers-mongodb';
 import { Application } from '../../declarations';
-import createApplication from "@feathersjs/feathers";
-import {NotImplemented} from "@feathersjs/errors";
+import createApplication from '@feathersjs/feathers';
+import {NotImplemented} from '@feathersjs/errors';
 
 export class Series extends Service {
   //eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -27,4 +27,4 @@ export class Series extends Service {
   async remove(id: createApplication.NullableId, params?: createApplication.Params): Promise<any[] | any> {
     throw new NotImplemented();
   }
-};
+}
